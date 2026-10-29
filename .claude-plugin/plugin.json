@@ -1,0 +1,15 @@
+{
+  "name": "session-fleet",
+  "version": "1.0.0",
+  "displayName": "Session fleet",
+  "description": "Sessions that start other sessions and manage them: a manager role, background sessions per ticket or per prompt, sessions joining a manager, successors started at handover, and a board of the whole fleet. Builds on session-cap.",
+  "author": {
+    "name": "Arda Ozturk",
+    "url": "https://github.com/OzturkArda"
+  },
+  "dependencies": [
+    "session-cap"
+  ],
+  "repository": "https://github.com/OzturkArda/claude-session-fleet",
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "session-fleet",
+  "description": "Claude Code sessions that start and manage other sessions, with the session-cap plugin they build on.",
+  "owner": {
+    "name": "Arda Ozturk",
+    "url": "https://github.com/OzturkArda"
+  },
+  "plugins": [
+    {
+      "name": "session-fleet",
+      "source": "./",
+      "description": "Sessions that start other sessions and manage them: a manager role, background sessions per ticket or per prompt, sessions joining a manager, successors started at handover, and a board of the whole fleet. Builds on session-cap."
+    },
+    {
+      "name": "session-cap",
+      "source": {
+        "source": "github",
+        "repo": "OzturkArda/claude-session-cap"
+      },
+      "description": "A per-session context cap (200k tokens by default): a Stop hook that trips once at the cap, a /handover skill that writes a handover document from disk, a ledger, a context report and a status line."
+    }
+  ]
+}

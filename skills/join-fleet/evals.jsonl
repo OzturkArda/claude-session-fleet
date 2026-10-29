@@ -1,0 +1,3 @@
+{"skills": ["join-fleet"], "query": "join the fleet", "expected_behavior": ["Runs `session-fleet join` with this session's id", "Sends the manager one line naming this session, its ticket and its directory"]}
+{"skills": ["join-fleet"], "query": "assign yourself to the manager", "expected_behavior": ["With no live manager, says so in one line and carries on standalone without searching ListAgents for one"]}
+{"skills": ["join-fleet"], "query": "report to the manager from now on", "expected_behavior": ["After joining, sends blockers and decisions needing the user to the manager with SendMessage"]}

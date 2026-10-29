@@ -1,0 +1,3 @@
+{"skills": ["board"], "query": "show the board", "expected_behavior": ["Runs `manager --declare-if-vacant` before the board", "Reports needs-attention items first, then sessions above 80% of the cap, then the roster", "Re-runs the script rather than repeating a roster from earlier in the conversation"]}
+{"skills": ["board"], "query": "board for PROJ-4879", "expected_behavior": ["Passes `--ticket PROJ-4879`"]}
+{"skills": ["board"], "query": "who is running? one session hit the cap and handed over but its successor died", "expected_behavior": ["Flags the handover whose successor is `FAILED` or `NOT FOUND` under needs attention"]}
